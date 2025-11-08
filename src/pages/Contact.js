@@ -99,15 +99,39 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="social-links">
-              <h3>Follow Us</h3>
-              <div className="social-icons">
-                <a href="#" className="social-link">📘 Facebook</a>
-                <a href="#" className="social-link">📷 Instagram</a>
-                <a href="#" className="social-link">💼 LinkedIn</a>
-              </div>
-            </div>
-          </div>
+           <ul className="socials">
+  <li>
+    <a
+      href="https://facebook.com/yourpage"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+    >
+      Facebook
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://instagram.com/yourpage"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+    >
+      Instagram
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/company/yourcompany"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      LinkedIn
+    </a>
+  </li>
+</ul>
+
 
           {/* Contact Form */}
           <div className="contact-form-section">

@@ -1,23 +1,23 @@
 import React from 'react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "911234567890"; // Replace with actual number
-  const message = "Hello, I'm interested in KVK Solar services. Please provide more information.";
+  // WhatsAppButton.js
+const phone = "919876543210";              // ← your number with country code
+const message = "Hello! I’d like to know more.";
+const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-  const handleClick = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
+return (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whatsapp-button"
+    aria-label="Chat with us on WhatsApp"
+  >
+    Chat on WhatsApp
+  </a>
+);
 
-  return (
-    <a 
-      className="whatsapp-button" 
-      onClick={handleClick}
-      title="Chat with us on WhatsApp"
-    >
-      💬
-    </a>
-  );
 };
 
 export default WhatsAppButton;

@@ -1,0 +1,355 @@
+.pm-surya-ghar-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.scheme-hero {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.scheme-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.scheme-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Overview Section */
+.scheme-overview {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.overview-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.overview-content p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.benefits-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  background: #f8f9fa;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid #ff9800;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Eligibility Section */
+.eligibility-section {
+  padding: 60px 0;
+  background: #e8f5e9;
+}
+
+.eligibility-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.eligibility-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.eligibility-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #c8e6c9;
+}
+
+.eligibility-item:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  color: #4caf50;
+}
+
+.eligibility-item span:last-child {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Process Section */
+.process-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.process-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #ff9800;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.process-step h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.process-step p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Subsidy Section */
+.subsidy-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.subsidy-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.subsidy-table {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.subsidy-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.subsidy-row:last-child {
+  border-bottom: none;
+}
+
+.system-capacity {
+  font-weight: 600;
+  color: #333;
+}
+
+.subsidy-amount {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.cta-section p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #ff9800;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e68900;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #667eea;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #ff9800;
+}
+
+.faq-item h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scheme-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .scheme-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 200px;
+  }
+  
+  .subsidy-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

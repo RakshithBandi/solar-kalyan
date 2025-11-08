@@ -26,14 +26,10 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus('');
 
-    // Simulate form submission
     try {
       await new Promise(resolve => setTimeout(resolve, 1500));
-      
       console.log('Form submitted:', formData);
       setSubmitStatus('success');
-      
-      // Reset form
       setFormData({
         name: '',
         phone: '',
@@ -64,34 +60,42 @@ const Contact = () => {
           <div className="contact-info">
             <h2>Get In Touch</h2>
             <p>We're here to help you with your solar energy journey. Reach out to us for consultations, quotes, and support.</p>
-            
+
             <div className="contact-details">
               <div className="contact-item">
-                <div className="contact-icon">📍</div>
+                <div className="contact-icon" aria-hidden>📍</div>
                 <div>
                   <h3>Address</h3>
                   <p>Pune, Maharashtra, India</p>
                 </div>
               </div>
-              
+
               <div className="contact-item">
-                <div className="contact-icon">📞</div>
+                <div className="contact-icon" aria-hidden>📞</div>
                 <div>
                   <h3>Phone</h3>
-                  <p>+91 1234567890</p>
+                  <p>
+                    <a href="tel:+911234567890" aria-label="Call +91 1234567890">
+                      +91 1234567890
+                    </a>
+                  </p>
                 </div>
               </div>
-              
+
               <div className="contact-item">
-                <div className="contact-icon">✉️</div>
+                <div className="contact-icon" aria-hidden>✉️</div>
                 <div>
                   <h3>Email</h3>
-                  <p>info@kvksolar.com</p>
+                  <p>
+                    <a href="mailto:info@kvksolar.com" aria-label="Email info@kvksolar.com">
+                      info@kvksolar.com
+                    </a>
+                  </p>
                 </div>
               </div>
-              
+
               <div className="contact-item">
-                <div className="contact-icon">🕒</div>
+                <div className="contact-icon" aria-hidden>🕒</div>
                 <div>
                   <h3>Business Hours</h3>
                   <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
@@ -99,39 +103,39 @@ const Contact = () => {
               </div>
             </div>
 
-           <ul className="socials">
-  <li>
-    <a
-      href="https://facebook.com/yourpage"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Facebook"
-    >
-      Facebook
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://instagram.com/yourpage"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Instagram"
-    >
-      Instagram
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://www.linkedin.com/company/yourcompany"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="LinkedIn"
-    >
-      LinkedIn
-    </a>
-  </li>
-</ul>
-
+            <ul className="socials">
+              <li>
+                <a
+                  href="https://facebook.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/yourcompany"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
 
           {/* Contact Form */}
           <div className="contact-form-section">
@@ -150,7 +154,7 @@ const Contact = () => {
                     placeholder="Enter your full name"
                   />
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="phone">Phone Number *</label>
                   <input
@@ -218,8 +222,8 @@ const Contact = () => {
                 </div>
               )}
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="submit-btn"
                 disabled={isSubmitting}
               >
@@ -239,14 +243,15 @@ const Contact = () => {
               <p>Call us now for quick solar consultation</p>
             </div>
             <div className="quick-contact-actions">
-              <a href="tel:+911234567890" className="call-btn">
+              <a href="tel:+911234567890" className="call-btn" aria-label="Call now">
                 📞 Call Now
               </a>
-              <a 
-                href="https://wa.me/911234567890" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://wa.me/911234567890"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="whatsapp-btn"
+                aria-label="Chat on WhatsApp"
               >
                 💬 WhatsApp
               </a>
